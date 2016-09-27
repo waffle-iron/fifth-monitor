@@ -46,7 +46,7 @@ using the [google-spreadsheets][] npm package, by consuming the data houseed in 
 , which is entered using [this form][entryform]
 
 | Character | Character Name | 8-BIT Hex Code |
-| ========= | ============== | ============== |
+| :--------: | :-----------: | :------------: |
 | &#9660 | [BLACK DOWN POINTING TRIANGLE][] | e296bc |
 | &#9830 | [BLACK DIAMOND SUIT][] | e299a6 |
 | &#9632 | [BLACK SQUARE][] | e296a0 |
