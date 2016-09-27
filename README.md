@@ -47,10 +47,10 @@ using the [google-spreadsheets][] npm package, by consuming the data houseed in 
 
 | Character | Character Name | 8-BIT Hex Code |
 | :--------: | :-----------: | :------------: |
-| &#9660 | [BLACK DOWN POINTING TRIANGLE][] | e296bc |
-| &#9830 | [BLACK DIAMOND SUIT][] | e299a6 |
-| &#9632 | [BLACK SQUARE][] | e296a0 |
-| &#9679 | [BLACK CIRCLE][] | e2978f |
+| ▼ | [BLACK DOWN POINTING TRIANGLE][] | e296bc |
+| ♦ | [BLACK DIAMOND SUIT][] | e299a6 |
+| ■ | [BLACK SQUARE][] | e296a0 |
+| ● | [BLACK CIRCLE][] | e2978f |
 
 [symmetric]: https://en.wikipedia.org/wiki/Symmetric-key_algorithm
 [randomart]: http://askubuntu.com/questions/184547/find-randomart-of-existing-ssh-key
