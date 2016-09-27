@@ -1,12 +1,12 @@
-var Spreadsheet = require('google-spreadsheet');
-var spreadsheetKey = "1B8KmXWy0_bTpw_52m5r7-yYJxwfTJS1oyqDn5gKn6rk"
 var serviceAccount = require('./google-sheets-service-account.json');
-var doc = new Spreadsheet(spreadsheetKey);
+var Sheets = require('node-sheets').default;
 
-//set usage of service account for server-to-server auth
-doc.useServiceAccountAuth(serviceAccount,function(cb){
-  doc.getInfo( (err, info) => {
- 	console.log(info); 
-  });
-});
+var gs = new Sheets('1B8KmXWy0_bTpw_52m5r7-yYJxwfTJS1oyqDn5gKn6rk');
 
+gs.authorizeJWT(serviceAccount)
+  .then(() => gs.tables('A1:Qq'))
+  .then( data => {
+  	console.log(data);
+  })
+  .catch(err => console.error(err));
+	

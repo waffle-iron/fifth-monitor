@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/LongLiveCHIEF/fifth-monitor#readme",
   "dependencies": {
-    "google-spreadsheet": "^2.0.3",
     "mcrypt": "^0.1.11",
-    "request": "^2.75.0"
+    "node-sheets": "^0.3.1"
   }
 }
