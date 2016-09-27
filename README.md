@@ -41,6 +41,14 @@ code below here: [ZXing Decoder Online](https://zxing.org/w/decode.jspx)
 **Example Image with Data embedded (QR code)**  
 ![QR Code for your owlsector transmission](images/qr_code.jpg)
 
+### Hints from the Reddit user who decrypted the images
+
+reddit user `/r/thegrayfox89` unknowingly (IMHO) gave us a few hints of hist own in his post [Message Decoded for the new ARG][reddit]:
+
+- He mentions that he specifically looked to output JPEG data, and mentioned that there was other data that was either "garbage data", or data in a format he couldn't recognize
+- He mentions self-referencing nodes. If this was purely image data, it wouldn't make sense for a base64 decryption of a JPEG to have any matching buffers... especially buffers of such an immense size
+- it *does* make sense however, if some of the data within is text, and the message has non-unique words or phrases, or repeating patterns.
+
 ## Working Theories
 
 ### Theory 1
