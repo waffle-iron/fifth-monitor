@@ -17,7 +17,9 @@ up for 20 hours straight, and my ramblings seem like nonsense.
 I believe detailing the clues in this manner will help to rectify my ramblings,
 and together help the community unlock the next step:
 
-### Clues From Bungie
+## Clues
+
+### Hints gathered from Bungie
 
 - Nodes have names consisting of 4 different UTF-8 characters:
 - Each character is actually an 8-bit hex code:
@@ -27,7 +29,7 @@ and together help the community unlock the next step:
 - Rijndael-AES-CBC is a [symmetric encryption][symmetric] algorithm that uses the same
 key to both encrypt and decrypt a message
 
-### Clues of my own
+### Hints of my own
 
 - text can be embedded in images. For an excellent example of this, just take a
 photo of this QR code from any QR reader on your mobile device, or upload the QR
@@ -38,6 +40,15 @@ code below here: [ZXing Decoder Online](https://zxing.org/w/decode.jspx)
 
 **Example Image with Data embedded (QR code)**  
 ![QR Code for your owlsector transmission](images/qr_code.jpg)
+
+## Working Theories
+
+### Theory 1
+**The Images Together contain embedded data _(It's a QR code)_**
+This theory stipulates that the node names (once translated to hex)and the key sequences used together show you how to assemble the 8 images. On e assembled, the images actually are a QR code.
+
+### Theory 2 - Images are just verification art data still within
+This theory is that the images are just verification keys for the message that is embedded in the data. The node names (again translated to hex) are the public keys for the text data, and the images are the private keys. Used together you can decrypt the text contained within. The processing key is either a salt, a filtering mechanism for filtering image data from text data, or is a partial initilization vector that must be pieced together using the forwarding protocol
 
 ## Next Steps
 
@@ -51,6 +62,14 @@ using the [google-spreadsheets][] npm package, by consuming the data houseed in 
 | ♦ | [BLACK DIAMOND SUIT][] | e299a6 |
 | ■ | [BLACK SQUARE][] | e296a0 |
 | ● | [BLACK CIRCLE][] | e2978f |
+
+
+All coders, of any expertise, are welcome to particpate or contribute PR's. To help code, make sure you have latest `npm`, and then:
+
+```
+git clone git@github.com:LongLiveCHIEF/fifth-monitor.git
+npm install
+```
 
 [symmetric]: https://en.wikipedia.org/wiki/Symmetric-key_algorithm
 [randomart]: http://askubuntu.com/questions/184547/find-randomart-of-existing-ssh-key
