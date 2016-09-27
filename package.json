@@ -1,7 +1,7 @@
 {
   "name": "fifth-monitor",
   "version": "0.0.0",
-  "description": "- Each node contains a partial message - each message is encrypted using aes-256-cbc - each node contains it's own decryption tools:  - a salt (the processing key)  - an initialization vector",
+  "description": "https://www.bungie.net/en/net/sim",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/LongLiveCHIEF/fifth-monitor#readme",
   "dependencies": {
+    "google-spreadsheet": "^2.0.3",
     "mcrypt": "^0.1.11"
+  },
+  "config":
+  {
+   "spreadsheet-key":"d/1B8KmXWy0_bTpw_52m5r7-yYJxwfTJS1oyqDn5gKn6rk"
   }
 }

@@ -1,16 +1,10 @@
 var MCrypt = require('mcrypt').MCrypt;
 var fs = require('fs');
 
+var key = fs.readFileSync('DTCTT.key');
+var iv = fs.readFileSync('DTCTT.iv', 'utf8');
+var proc = fs.readFileSync('DTCTT.proc');
 
-// key should be hexadecimal
-var key = getKey(`${process.argv[2]}.key`);
+var rijCBC = new MCrypt('rijndael-128', 'cbc');
 
-// initialization Vector should be 32 bit 
-var iv = getIV();
-
-var rijCBC = new MCrypt('rijndael-256', 'cbc');
-
-rijCBC.open(key, iv);
-
-console.log(rijCBC.decrypt(new Buffer(partial));
-
+console.log(rijCBC.isBlockAlgorithm());
