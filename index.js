@@ -5,8 +5,8 @@ var gs = new Sheets('1B8KmXWy0_bTpw_52m5r7-yYJxwfTJS1oyqDn5gKn6rk');
 
 gs.authorizeJWT(serviceAccount)
   .then(() => gs.tables('A1:Qq'))
-  .then( data => {
-  	console.log(data);
+  .then( table => {
+  	console.log(table.headers);
   })
   .catch(err => console.error(err));
 	
