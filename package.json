@@ -4,7 +4,7 @@
   "description": "https://www.bungie.net/en/net/sim",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,7 @@
   },
   "homepage": "https://github.com/LongLiveCHIEF/fifth-monitor#readme",
   "dependencies": {
-    "google-spreadsheet": "^2.0.3",
-    "mcrypt": "^0.1.11"
-  },
-  "config":
-  {
-   "spreadsheet-key":"d/1B8KmXWy0_bTpw_52m5r7-yYJxwfTJS1oyqDn5gKn6rk"
+    "mcrypt": "^0.1.11",
+    "node-sheets": "^0.3.1"
   }
 }

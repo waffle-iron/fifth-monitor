@@ -1,10 +1,12 @@
-var MCrypt = require('mcrypt').MCrypt;
-var fs = require('fs');
+var serviceAccount = require('./google-sheets-service-account.json');
+var Sheets = require('node-sheets').default;
 
-var key = fs.readFileSync('DTCTT.key');
-var iv = fs.readFileSync('DTCTT.iv', 'utf8');
-var proc = fs.readFileSync('DTCTT.proc');
+var gs = new Sheets('1B8KmXWy0_bTpw_52m5r7-yYJxwfTJS1oyqDn5gKn6rk');
 
-var rijCBC = new MCrypt('rijndael-128', 'cbc');
-
-console.log(rijCBC.isBlockAlgorithm());
+gs.authorizeJWT(serviceAccount)
+  .then(() => gs.tables('A1:Qq'))
+  .then( table => {
+  	console.log(table.headers);
+  })
+  .catch(err => console.error(err));
+	
