@@ -1,0 +1,22 @@
+{
+  "name": "fifth-monitor",
+  "version": "0.0.0",
+  "description": "- Each node contains a partial message - each message is encrypted using aes-256-cbc - each node contains it's own decryption tools:  - a salt (the processing key)  - an initialization vector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LongLiveCHIEF/fifth-monitor.git"
+  },
+  "author": "Brian Vanderbusch <brian.vanderbusch@gmail.com> (https://github.com/LongLiveCHIEF)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LongLiveCHIEF/fifth-monitor/issues"
+  },
+  "homepage": "https://github.com/LongLiveCHIEF/fifth-monitor#readme",
+  "dependencies": {
+    "mcrypt": "^0.1.11"
+  }
+}
